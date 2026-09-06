@@ -1,0 +1,12 @@
+HAMU STRIKE - CSMAP FINAL LOADER
+
+The existing assets/models/csmap.glb is preserved.
+
+This version uses a self-contained GLB reader inside game.js. It does NOT depend
+on GLTFLoader/CDN/modules, so the map can load from the local START_GAME.bat server.
+
+The inspected csmap.glb is a standard GLB 2.0 file with triangle primitives,
+embedded binary geometry, normals, UVs and PBR material colors. Its measured
+bounds are approximately 25 x 4.65 x 16.65 units, so it is kept at scale 1.
+
+Run START_GAME.bat, then enter Clash Squad.
