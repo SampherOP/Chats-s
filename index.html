@@ -114,7 +114,8 @@
 
     <!-- Scripts Order is Critical -->
     <script src="three.min.js"></script>
-    <!-- GLTFLoader from CDN compatible with Three.js r160; game.js safely falls back if CDN is unavailable -->
-<script src="game.js?v=human-ai-11"></script>
+    <!-- Reinforces collision bounds for thin walls, planks and bridge pieces in csmap.glb -->
+    <script src="collision_fix.js?v=1"></script>
+    <script src="game.js?v=human-ai-11"></script>
 </body>
 </html>
