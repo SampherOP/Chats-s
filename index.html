@@ -7,40 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="game"></div>
-    <div id="labels"></div>
-    
-    <div id="menu" class="screen">
-        <div class="panel">
-            <h1 class="logo">HAMU <span>STRIKE</span></h1>
-            <p class="tag">LONEWOLF // CLASH SQUAD</p>
-            <button id="lonewolf">1v1 LONEWOLF</button>
-            <button id="tdm" class="secondary">CLASH SQUAD</button>
-            <p class="small">WASD Move · Hold W at ladder to climb · Mouse Aim · LMB Fire · R Reload · SPACE Jump · SHIFT Sprint · C Crouch · X Hold Slide · Q Build · RMB Aim · B Emotes · ESC Pause</p>
-        </div>
-    </div>
-
+    <div id="game"></div><div id="labels"></div>
+    <div id="menu" class="screen"><div class="panel"><h1 class="logo">HAMU <span>STRIKE</span></h1><p class="tag">LONEWOLF // CLASH SQUAD</p><button id="lonewolf">1v1 LONEWOLF</button><button id="tdm" class="secondary">CLASH SQUAD</button><p class="small">WASD Move · Hold W at ladder to climb · Mouse Aim · LMB Fire · R Reload · SPACE Jump · SHIFT Sprint · C Crouch · X Hold Slide · Q Build · RMB Aim · B Emotes · ESC Pause</p></div></div>
     <div id="modeMenu" class="screen hidden"><div class="back" data-back="menu">← BACK</div><div class="panel"><h1>1v1 LONEWOLF</h1><p>Choose your opponent.</p><button id="fightAI">FIGHT WITH AI</button><button id="fightOnline" class="secondary">FIGHT WITH ONLINE PLAYERS</button></div></div>
     <div id="clashMenu" class="screen hidden"><div class="back" data-back="menu">← BACK</div><div class="panel"><h1>CLASH SQUAD 4V4</h1><p>4V4 · BLUE TEAM vs RED TEAM · 4 ROUND FORMAT</p><button id="clashQuick">QUICK PLAY</button><button id="clashAI" class="secondary">PRACTICE WITH BOTS</button></div></div>
     <div id="queue" class="screen hidden queue"><div class="panel"><h1 id="queueTitle">SEARCHING FOR PLAYER</h1><div class="spinner"></div><p id="queueText">Joining Clash Squad queue…</p><button id="cancelQueue" class="secondary">CANCEL</button></div></div>
-
-    <div id="hud" class="overlay hidden">
-        <div class="top"><b id="modeTitle">1v1 LONEWOLF</b><span id="teamBadge">BLUE TEAM</span><span id="roundScore">0 — 0</span><span id="roundTimer">02:00</span></div>
-        <div id="teamPanel"></div><div id="roundState"></div><div id="cross"><i></i><i></i><i></i><i></i></div><div id="hitmarker"></div><div id="damage"></div><div id="feed"></div>
-        <div id="bottom"><div class="status"><div id="weapon">DESERT EAGLE</div><div class="bar"><i id="hpbar"></i></div><span id="hp">100 HP</span> <span id="armor">50 ARM</span> <span id="stance">READY</span><div id="slideBar"><i id="slideFill"></i><span>SLIDE</span></div></div><div class="ammo"><span id="mag">7</span><small>/ <span id="reserve">35</span></small></div></div>
-        <div id="build">Q BUILD · LMB PLACE · E ROTATE · Q CANCEL</div><div id="specHint">SPECTATING · SCROLL TO SWITCH TEAMMATE</div>
-    </div>
-
+    <div id="hud" class="overlay hidden"><div class="top"><b id="modeTitle">1v1 LONEWOLF</b><span id="teamBadge">BLUE TEAM</span><span id="roundScore">0 — 0</span><span id="roundTimer">02:00</span></div><div id="teamPanel"></div><div id="roundState"></div><div id="cross"><i></i><i></i><i></i><i></i></div><div id="hitmarker"></div><div id="damage"></div><div id="feed"></div><div id="bottom"><div class="status"><div id="weapon">DESERT EAGLE</div><div class="bar"><i id="hpbar"></i></div><span id="hp">100 HP</span> <span id="armor">50 ARM</span> <span id="stance">READY</span><div id="slideBar"><i id="slideFill"></i><span>SLIDE</span></div></div><div class="ammo"><span id="mag">7</span><small>/ <span id="reserve">35</span></small></div></div><div id="build">Q BUILD · LMB PLACE · E ROTATE · Q CANCEL</div><div id="specHint">SPECTATING · SCROLL TO SWITCH TEAMMATE</div></div>
     <div id="shop" class="overlay hidden"><div class="shopbox"><div class="shopHead"><div><h1>BUY PHASE</h1><p>LOCKED FOR <span id="buyTimer">5.0</span>s</p></div><div class="coins"><span id="coins">500</span> COINS</div></div><div class="guns" id="gunCards"></div><p class="shopHint">4-round Clash Squad / 5-round Lonewolf match · USP is equipped free; other weapons require coins.</p></div></div>
-
     <div id="result" class="screen hidden"><div class="panel"><h1 id="resultTitle">ROUND WON</h1><p id="resultSub"></p><button id="nextRound">NEXT ROUND</button><button id="leaveMatch" class="secondary">LEAVE TO MENU</button></div></div>
     <div id="pause" class="screen hidden"><div class="panel"><h1>PAUSED</h1><button id="resume">RESUME</button><button id="leavePause" class="secondary">LEAVE MATCH</button></div></div>
-    <div id="achievement" class="hidden"><strong>HEADSHOT</strong><span>ELIMINATION</span></div>
-    <div id="roundResult" class="hidden"><div id="roundResultTitle">VICTORY</div><div id="roundResultSub">ROUND WON</div><div class="roundTrack"><i id="roundFill"></i></div></div>
-
+    <div id="achievement" class="hidden"><strong>HEADSHOT</strong><span>ELIMINATION</span></div><div id="roundResult" class="hidden"><div id="roundResultTitle">VICTORY</div><div id="roundResultSub">ROUND WON</div><div class="roundTrack"><i id="roundFill"></i></div></div>
     <script src="three.min.js"></script>
     <script src="collision_fix.js?v=3"></script>
     <script src="game.js?v=human-ai-11"></script>
-    <script src="ai_tuning.js?v=2"></script>
+    <script src="ai_tuning.js?v=4"></script>
 </body>
 </html>
